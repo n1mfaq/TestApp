@@ -1,0 +1,9 @@
+Table: Experiments
+
+ Id (PK, uniqueidentifier) | Key (nvarchar(255)) | OptionsJson (nvarchar(255)) 
+
+
+Table: DeviceExperiments
+
+DeviceId (PK, uniqueidentifier) | ExperimentKey (nvarchar(255)) | ExperimentId (uniqueidentifier) | Option (nvarchar(max))
+
