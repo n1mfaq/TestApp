@@ -1,0 +1,30 @@
+@model List<TestApp.Models.DTO.ExperimentStatisticsViewModel>
+
+<h2>Експериментальна статистика</h2>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Ключ експерименту</th>
+        <th>Загальна кількість пристроїв</th>
+        <th>Розподіл опцій</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ExperimentKey</td>
+            <td>@item.TotalDevices</td>
+            <td>
+                <ul>
+                    @foreach (var option in item.OptionsDistribution)
+                    {
+                        <li>@option.Key : @option.Value</li>
+                    }
+                </ul>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
