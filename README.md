@@ -31,7 +31,7 @@ Postgres
 
 ### Запуск
 
-При запуске ( http TestApp ) попадаем в swagger, есть 2 эндпоинта : deviceToken - Guid
+При запуске ( http TestApp ) попадаем в swagger, есть 2 эндпоинта : параметр deviceToken - Guid
 
 - http://localhost:5222/api/experiment/button-color
 - http://localhost:5222/api/experiment/price
